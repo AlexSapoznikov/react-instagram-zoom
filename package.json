@@ -1,6 +1,6 @@
 {
   "name": "react-instagram-zoom",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React component that implements Instagram-like zoom for mobile",
   "author": "https://github.com/AlexSapoznikov/react-instagram-zoom",
   "license": "MIT",
