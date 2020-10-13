@@ -16,11 +16,11 @@ type ZoomableType = {
   style?: CSSProperties,
   maxScale?: number, // Same as CSS transform scale
   releaseAnimationTimeout?: number, // In milliseconds
-  onReleaseAnimationStart?: (event: Event) => void,
-  onReleaseAnimationEnd?: (event: Event) => void,
-  onTouchStart?: (event: Event) => void,
-  onTouchMove?: (event: Event) => void,
-  onTouchEnd?: (event: Event) => void,
+  onReleaseAnimationStart?: (event: TouchEvent) => void,
+  onReleaseAnimationEnd?: (event: TouchEvent) => void,
+  onTouchStart?: (event: TouchEvent) => void,
+  onTouchMove?: (event: TouchEvent) => void,
+  onTouchEnd?: (event: TouchEvent) => void,
 };
 
 let releaseTimeout: any;
@@ -245,11 +245,11 @@ const Zoomable = (props: ZoomableType) => {
            transform: `translate(${moveLeft}px, ${moveTop}px) scale(${scale})`,
            transition: !isMoving
              ? `
-            ${releaseAnimationTimeout}ms transform,
-            ${releaseAnimationTimeout}ms transform-origin,
-            ${releaseAnimationTimeout}ms z-index,
-            ${releaseAnimationTimeout}ms position
-          `
+             ${releaseAnimationTimeout}ms transform,
+             ${releaseAnimationTimeout}ms transform-origin,
+             ${releaseAnimationTimeout}ms z-index,
+             ${releaseAnimationTimeout}ms position
+             `
              : undefined,
            ...style
          }}
