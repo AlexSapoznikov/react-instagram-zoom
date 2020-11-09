@@ -2,7 +2,7 @@
 
 React component that implements Instagram-like zoom for mobile. No dependencies.
 
-*Same module is available for angular here: (ngx-instagram-zoom)[https://github.com/AlexSapoznikov/ngx-instagram-zoom]*
+*Same module is available for angular here: [ngx-instagram-zoom](https://github.com/AlexSapoznikov/ngx-instagram-zoom)*
 
 [![NPM](https://img.shields.io/npm/v/react-instagram-zoom.svg)](https://www.npmjs.com/package/react-instagram-zoom) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
